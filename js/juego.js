@@ -13,6 +13,7 @@ var filas = 150;
 var columnas = 150;
 
 // Colores a usar //
+var gris = '#99A3A4';
 // Opcion 1 //
 var negro = '#000000';
 var blanco = '#FFFFFF';
@@ -156,18 +157,24 @@ function reiniciar(){
 function colorOpcionUno() {
     colorV = blanco;
     colorM = negro;
+    document.getElementById("margenUp").style.backgroundColor = gris;
+    document.getElementById("margenDown").style.backgroundColor = gris;
     inicializaTablero(tablero, true);
 }
 
 function colorOpcionDos() {
     colorV = amarillo;
     colorM = verde;
+    document.getElementById("margenUp").style.backgroundColor = colorM;
+    document.getElementById("margenDown").style.backgroundColor = colorM;
     inicializaTablero(tablero, true);
 }
 
 function colorOpcionTres() {
     colorV = verdePillo;
     colorM = negro;
+    document.getElementById("margenUp").style.backgroundColor = colorM;
+    document.getElementById("margenDown").style.backgroundColor = colorM;
     inicializaTablero(tablero, true);
 }
 
