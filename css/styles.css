@@ -1,0 +1,34 @@
+@media(min-width: 675px) and (max-width: 800px){
+    #canvas{
+    width: 100%;
+    }
+    #columna-input{
+        margin-bottom: 3%;
+    }
+}
+
+@media(max-width:675px){
+    #canvas{
+    width: 80%;
+    }
+    #columna-input{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    #texto-informativo{
+        margin-top: 1%;
+    }
+}
+
+.margen{
+    background-color:#99A3A4;
+    height: 3%;
+    width: cover;
+
+}
+
+p{
+    text-align: center;
+}
+
+ 
