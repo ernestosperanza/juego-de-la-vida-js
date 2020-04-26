@@ -89,8 +89,10 @@ function dibujaTablero(obj) {
 
 }
 
+//-------------------------------------------------------------------------//
+//            Inicializa el estado en el onload de la pagina               //
+//-------------------------------------------------------------------------//
 
-// Inicializa el estado en el onload de la pagina
 function inicializa() {
 
     // Asociar el canvas  //
@@ -165,18 +167,6 @@ function colorOpcionTres() {
     colorV = verdePillo;
     colorM = negro;
     inicializaTablero(tablero, true);
-}
-
-//-------------------------------------------------------------------------//
-//                           Funcion Crea Array2D                          //
-//-------------------------------------------------------------------------//
-
-function crearArray2D(filas, columnas) {
-    let obj = new Array(filas);
-    for (let y = 0; y < filas; y++) {
-        obj[y] = new Array(columnas);
-    }
-    return obj;
 }
 
 //-------------------------------------------------------------------------//
