@@ -1,81 +1,77 @@
 <html>
-    <head>
-        <title>El Juego de la Vida</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+    <title>El Juego de la Vida</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Script Del Juego -->
-        <script src= 'js/classAgente.js'></script>
-        <script src= 'js/juego.js'></script>
-    </head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- Script Del Juego -->
+    <script src='js/classAgente.js'></script>
+    <script src='js/juego.js'></script>
+</head>
 
-    <body onload = 'inicializa();'>
-        <div class="margen">
+<body onload='inicializa();'>
+    <div class="margen">
 
-        </div>
-          <div class="container" style="margin-top: 1%;">
-            <div class="row">
-              <div class="col-sm">
+    </div>
+    <div class="container" style="margin-top: 1%;">
+        <div class="row">
+            <div class="col-sm">
                 <canvas id='canvas' style='border:2px solid #000000;'></canvas>
-              </div>
-            
-          
+            </div>
 
             <div class="col-sm" id="columna-input" style="margin-left: 15px;">
-                <div><h3 style="text-align: center;">El Juego de la vida</h3>
+                <div>
+                    <h3 style="text-align: center;">El Juego de la vida</h3>
                 </div>
                 <div class="row" id="texto-informativo" style="font-size: 14;">
-                    <p>El juego de la vida es un autómata celular diseñado por el matemático británico John Horton Conway en 1970.
-                    Se trata de un juego de cero jugadores, lo que quiere decir que su evolución está determinada por el estado inicial y no necesita ninguna entrada de datos posterior.<br>
-                    Las células tienen dos estados: están "vivas" o "muertas". El estado de las células evolucionan por ciclos. El estado de todas las células se tiene en cuenta para calcular el estado de las mismas al turno siguiente. Todas las células se actualizan simultáneamente en cada turno, siguiendo estas reglas:
+                    <p>El juego de la vida es un autómata celular diseñado por el matemático británico John Horton Conway en 1970. Se trata de un juego de cero jugadores, lo que quiere decir que su evolución está determinada por el estado inicial y no necesita ninguna entrada de datos posterior.
+                        <br> Las células tienen dos estados: están "vivas" o "muertas". El estado de las células evolucionan por ciclos. El estado de todas las células se tiene en cuenta para calcular el estado de las mismas al turno siguiente. Todas las células se actualizan simultáneamente en cada turno, siguiendo estas reglas:</p>
                     <ul>
                         <li>Una célula muerta con exactamente 3 células vecinas vivas "nace" (es decir, al turno siguiente estará viva).</li>
                         <li>Una célula viva con 2 o 3 células vecinas vivas sigue viva, en otro caso muere (por "soledad" o "superpoblación").</li>
-                    </ul> 
-                </p>    
+                    </ul>
+
                 </div>
                 <div class="row">
-                    <div><h6>Controla el tablero: </h6></div>
+                    <div>
+                        <h6>Controla el tablero: </h6></div>
                     <button type="button" class="btn btn-info btn-block" style="margin: 0.3%;" onclick="activar()">Activar</button>
                     <button type="button" class="btn btn-dark btn-block" style="margin: 0.3%;" onclick="pausar()">Pausar</button>
                     <button type="button" class="btn btn-secondary btn-block" style="margin: 0.3%;" onclick="reiniciar()">Reiniciar</button>
                 </div>
-            
+
                 <div class="row">
-                        <h6>Personaliza tus colores: </h6>
+                    <h6>Personaliza tus colores: </h6>
                     <div class="btn-group btn-group-toggle btn-block" data-toggle="buttons">
                         <label class="btn btn-secondary active">
-                          <input type="radio" onclick="colorOpcionUno()" checked>Negro y Blanco
+                            <input type="radio" onclick="colorOpcionUno()" checked>Negro y Blanco
                         </label>
                         <label class="btn btn-secondary">
-                          <input type="radio" onclick="colorOpcionDos()">Verde y Amarillo
+                            <input type="radio" onclick="colorOpcionDos()">Verde y Amarillo
                         </label>
                         <label class="btn btn-secondary">
-                          <input type="radio" onclick="colorOpcionTres()">Negro y Verde 
+                            <input type="radio" onclick="colorOpcionTres()">Negro y Verde
                         </label>
-                      </div>
                     </div>
                 </div>
-              </div>
             </div>
-        </div> 
-        <div>
-    </div>  
-    <div class="margen" style="position: fix; bottom: 0; margin-top: 30px;"></div>
-    
-
+        </div>
+        </div>  
+        </div>
+        <div class="margen" style="position: fix; bottom: 0; margin-top: 30px;"></div>
         
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    </body>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
 </html>
