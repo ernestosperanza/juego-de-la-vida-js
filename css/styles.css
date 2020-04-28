@@ -29,6 +29,18 @@
 
 p{
     text-align: center;
+    margin: auto;
+    display: block;
+
 }
 
- 
+canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+}
+
+h6 {
+    text-align:center;
+
+}
