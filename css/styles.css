@@ -1,16 +1,16 @@
 @media(min-width: 675px) and (max-width: 800px){
-    #canvas{
+    /*#canvas{
     width: 100%;
-    }
+    }*/
     #columna-input{
         margin-bottom: 3%;
     }
 }
 
 @media(max-width:675px){
-    #canvas{
+    /*#canvas{
     width: 80%;
-    }
+    }*/
     #columna-input{
         margin-top: 3%;
         margin-bottom: 3%;
