@@ -129,7 +129,6 @@ function principal() {
     // borrarCanvas;
     () => canvas.width = canvas.width; canvas.height = canvas.height;
     dibujaTablero(tablero);
-    console.log('fotograma');
 
 }
 
@@ -159,6 +158,12 @@ function colorOpcionUno() {
     colorM = negro;
     document.getElementById("margenUp").style.backgroundColor = gris;
     document.getElementById("margenDown").style.backgroundColor = gris;
+    document.getElementById("btn-activar").className = 'btn btn-info btn-block';
+    document.getElementById("btn-pausar").className = 'btn btn-dark btn-block';
+    document.getElementById("btn-reiniciar").className = 'btn btn-secondary btn-block';
+    document.getElementById("btn-1").className = 'btn btn-secondary';
+    document.getElementById("btn-2").className = 'btn btn-secondary';
+    document.getElementById("btn-3").className = 'btn btn-secondary';
     inicializaTablero(tablero, true);
 }
 
@@ -167,6 +172,13 @@ function colorOpcionDos() {
     colorM = verde;
     document.getElementById("margenUp").style.backgroundColor = colorM;
     document.getElementById("margenDown").style.backgroundColor = colorM;
+    document.getElementById("btn-activar").className = 'btn btn-warning btn-block';
+    document.getElementById("btn-pausar").className = 'btn btn-secondary btn-block';
+    document.getElementById("btn-reiniciar").className = 'btn btn-dark btn-block';
+    document.getElementById("btn-1").className = 'btn btn-secondary';
+    document.getElementById("btn-2").className = 'btn btn-secondary';
+    document.getElementById("btn-3").className = 'btn btn-secondary';
+    
     inicializaTablero(tablero, true);
 }
 
@@ -175,6 +187,13 @@ function colorOpcionTres() {
     colorM = negro;
     document.getElementById("margenUp").style.backgroundColor = colorM;
     document.getElementById("margenDown").style.backgroundColor = colorM;
+    document.getElementById("btn-activar").className = 'btn btn-outline-success btn-block';
+    document.getElementById("btn-pausar").className = 'btn btn-outline-secondary btn-block';
+    document.getElementById("btn-reiniciar").className = 'btn btn-outline-dark btn-block';
+    document.getElementById("btn-1").className = 'btn btn-outline-secondary';
+    document.getElementById("btn-2").className = 'btn btn-outline-secondary';
+    document.getElementById("btn-3").className = 'btn btn-outline-dark';
+    
     inicializaTablero(tablero, true);
 }
 
