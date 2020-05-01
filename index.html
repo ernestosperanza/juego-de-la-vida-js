@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
     <title>El Juego de la Vida</title>
@@ -8,28 +9,33 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- Script Del Juego -->
     <script src='js/classAgente.js'></script>
     <script src='js/juego.js'></script>
+
 </head>
 
 <body onload='inicializa();'>
+
+
     <div id="margenUp" class="margen"></div>
 
     <div class="container" style="margin-top: 1%;">
         <div class="row">
-            <div class="col-md">
+
+            <!-- Columna canvas -->
+            <div class="col-md" id="columna-canvas">
                 <canvas id='canvas' style='border:2px solid #000000;'></canvas>
             </div>
 
+            <!-- Columna Input -->
             <div class="col-md" id="columna-input">
-                <div>
-                    <h3 style="text-align: center;">El Juego de la vida</h3>
-                </div>
-                <div class="row" id="texto-informativo" style="font-size: 14;">
+
+                <!-- Texto -->
+                <h3 style="text-align: center;">El Juego de la vida</h3>
+                <div class="row" id="texto-informativo" style="font-size: 14px;">
                     <p>El juego de la vida es un autómata celular diseñado por el matemático británico John Horton
                         Conway en 1970. Se trata de un juego de cero jugadores, lo que quiere decir que su evolución
                         está determinada por el estado inicial y no necesita ninguna entrada de datos posterior.
@@ -43,12 +49,11 @@
                         <li>Una célula viva con 2 o 3 células vecinas vivas sigue viva, en otro caso muere (por
                             "soledad" o "superpoblación").</li>
                     </ul>
+                </div>
 
-                </div>
-                <div>
-                    <h6>Controla el tablero: </h6>
-                </div>
-                <div class="row">
+                <!-- Botones Contoladores -->
+                <h6>Controla el tablero: </h6>
+                <div class="row" id="botones-control">
                     <button type="button" class="btn btn-info btn-block" style="margin: 0.3%;"
                         onclick="activar()">Activar</button>
                     <button type="button" class="btn btn-dark btn-block" style="margin: 0.3%;"
@@ -57,10 +62,9 @@
                         onclick="reiniciar()">Reiniciar</button>
                 </div>
 
-                <div>
-                    <h6>Personaliza tus colores: </h6>
-                </div>
-                <div class="row">
+                <!-- Botones Contoladores 2 -->
+                <h6>Personaliza tus colores: </h6>
+                <div class="row" id="botones-color">
                     <div class="btn-group btn-group-toggle btn-block" data-toggle="buttons">
                         <label class="btn btn-secondary active">
                             <input type="radio" onclick="colorOpcionUno()" checked>Negro y Blanco
@@ -73,14 +77,21 @@
                         </label>
                     </div>
                 </div>
+
+
+            <!-- Columna-input -->
             </div>
+        <!-- Container row -->
         </div>
+    <!-- Container -->
     </div>
 
-    <div id="margenDown" class="margen" style="position: fix; bottom: 0; margin-top: 30px;"></div>
 
 
-
+    <!-- Footer -->
+    <footer class="page-footer" id="margenDown">
+    </footer>
+    <!-- Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -93,6 +104,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
