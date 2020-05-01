@@ -54,11 +54,11 @@
                 <!-- Botones Contoladores -->
                 <h6>Controla el tablero: </h6>
                 <div class="row" id="botones-control">
-                    <button type="button" class="btn btn-info btn-block" style="margin: 0.3%;"
+                    <button type="button" id="btn-activar" class="btn btn-info btn-block" style="margin: 0.3%;"
                         onclick="activar()">Activar</button>
-                    <button type="button" class="btn btn-dark btn-block" style="margin: 0.3%;"
+                    <button type="button" id="btn-pausar" class="btn btn-dark btn-block" style="margin: 0.3%;"
                         onclick="pausar()">Pausar</button>
-                    <button type="button" class="btn btn-secondary btn-block" style="margin: 0.3%;"
+                    <button type="button" id="btn-reiniciar" class="btn btn-secondary btn-block" style="margin: 0.3%;"
                         onclick="reiniciar()">Reiniciar</button>
                 </div>
 
@@ -66,13 +66,13 @@
                 <h6>Personaliza tus colores: </h6>
                 <div class="row" id="botones-color">
                     <div class="btn-group btn-group-toggle btn-block" data-toggle="buttons">
-                        <label class="btn btn-secondary active">
+                        <label class="btn btn-secondary active" id="btn-1">
                             <input type="radio" onclick="colorOpcionUno()" checked>Negro y Blanco
                         </label>
-                        <label class="btn btn-secondary">
+                        <label class="btn btn-secondary" id="btn-2">
                             <input type="radio" onclick="colorOpcionDos()">Verde y Amarillo
                         </label>
-                        <label class="btn btn-secondary">
+                        <label class="btn btn-secondary" id="btn-3">
                             <input type="radio" onclick="colorOpcionTres()">Negro y Verde
                         </label>
                     </div>
