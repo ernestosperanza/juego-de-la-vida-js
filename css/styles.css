@@ -9,21 +9,25 @@
 
 @media(max-width:675px){
     #canvas{
-    width: 80%;
+    width: 85%;
     }
-    #columna-input{
-        margin-top: 3%;
-        margin-bottom: 3%;
+
+    #columna-canvas {
+        margin-top: 2%;
+    }
+    #columna-input {
+        margin: 4% 4% 4% 4%;
+
     }
     #texto-informativo{
         margin-top: 1%;
     }
+
 }
 
 .margen{
     background-color:#99A3A4;
-    height: 3%;
-    width: cover;
+    height: 2rem;
 
 }
 
@@ -38,9 +42,24 @@ canvas {
     padding: 0;
     margin: auto;
     display: block;
+
 }
 
 h6 {
     text-align:center;
 
+}
+
+footer {
+    background-color:#99A3A4;
+    width: 100%;
+    bottom: 0;
+    height: 2rem; 
+    position: fixed;
+    margin-top: 60px;
+
+  }
+
+#botones-color {
+    margin-bottom: 30px;
 }
