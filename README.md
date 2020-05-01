@@ -9,8 +9,8 @@ Las células tienen dos estados: están "vivas" o "muertas". El estado de las c�
 ##### Podes ver el sitio en funcionamiento acá:  [El Juego de la vida](https://ernestosperanza-gol.netlify.app/)
 
 ###### Tome como referencia los siguientes materiales: 
-[Yotube: Programar es increíble](https://www.youtube.com/watch?v=SjH4CcOAcsg&t=1046s)\
-[The Coding Train](https://www.youtube.com/watch?v=tENSCEO-LEc)\
-[The Coding Train: 2D Array](https://www.youtube.com/watch?v=OTNpiLUSiB4)\
-[Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)\
+######[Yotube: Programar es increíble](https://www.youtube.com/watch?v=SjH4CcOAcsg&t=1046s)\
+######[The Coding Train](https://www.youtube.com/watch?v=tENSCEO-LEc)\
+######[The Coding Train: 2D Array](https://www.youtube.com/watch?v=OTNpiLUSiB4)\
+######[Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
